@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="3" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-27T06:47:52 GST" name="Default suite" finished-at="2023-04-27T06:48:42 GST" duration-ms="50190">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4b8ee4de]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-04-27T06:47:52 GST" name="Default test" finished-at="2023-04-27T06:48:42 GST" duration-ms="50190">
+      <class name="runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runners.TestRunner@4b8ee4de]" started-at="2023-04-27T06:47:52 GST" name="setUpClass" finished-at="2023-04-27T06:47:53 GST" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4b8ee4de]" started-at="2023-04-27T06:47:53 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-27T06:48:00 GST" duration-ms="7077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Jawwy plans type, price for the first plan"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify Jawwy plans]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4b8ee4de]" started-at="2023-04-27T06:48:00 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-27T06:48:05 GST" duration-ms="5071" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Jawwy plans currency for the first plan"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify Jawwy plans]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [AED/month] but found [USD/month]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [AED/month] but found [USD/month]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at stepdefinitions.VerifyPlansDefinitions.I_should_see_the_correct_Currency_for_the_first_plan(VerifyPlansDefinitions.java:44)
+at ✽.I should see the correct Currency for the first plan(file:///E:/Tokka-TA/Jawwy-task/src/test/resources/features/Verify-Plans.feature:29)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4b8ee4de]" started-at="2023-04-27T06:48:05 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-27T06:48:11 GST" duration-ms="6623" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Jawwy plans type, price for the second plan"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify Jawwy plans]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4b8ee4de]" started-at="2023-04-27T06:48:11 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-27T06:48:17 GST" duration-ms="5483" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Jawwy plans currency for the second plan"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify Jawwy plans]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [AED/month] but found [USD/month]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [AED/month] but found [USD/month]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at stepdefinitions.VerifyPlansDefinitions.I_should_see_the_correct_Currency_for_the_second_plan(VerifyPlansDefinitions.java:78)
+at ✽.I should see the correct Currency for the second plan(file:///E:/Tokka-TA/Jawwy-task/src/test/resources/features/Verify-Plans.feature:37)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4b8ee4de]" started-at="2023-04-27T06:48:17 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-27T06:48:29 GST" duration-ms="11720" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Jawwy plans type, price for the third plan"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify Jawwy plans]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4b8ee4de]" started-at="2023-04-27T06:48:29 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-27T06:48:34 GST" duration-ms="5747" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Jawwy plans currency for the third plan"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify Jawwy plans]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [AED/month] but found [USD/month]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [AED/month] but found [USD/month]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at stepdefinitions.VerifyPlansDefinitions.I_should_see_the_correct_Currency_for_the_third_plan(VerifyPlansDefinitions.java:112)
+at ✽.I should see the correct Currency for the third plan(file:///E:/Tokka-TA/Jawwy-task/src/test/resources/features/Verify-Plans.feature:45)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4b8ee4de]" started-at="2023-04-27T06:48:34 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-27T06:48:42 GST" duration-ms="7984" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login to Jawwy TV]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://subscribe.jawwy.tv/en/user-dashboard] but found [https://subscribe.jawwy.tv/en/user-status]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://subscribe.jawwy.tv/en/user-dashboard] but found [https://subscribe.jawwy.tv/en/user-status]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at stepdefinitions.LoginStepDefinitions.i_should_be_logged_in_to_my_account(LoginStepDefinitions.java:38)
+at ✽.I should be logged in to my account(file:///E:/Tokka-TA/Jawwy-task/src/test/resources/features/login.feature:31)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@4b8ee4de]" started-at="2023-04-27T06:48:42 GST" name="tearDownClass" finished-at="2023-04-27T06:48:42 GST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
